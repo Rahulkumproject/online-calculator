@@ -1,9 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,blue,green)
+}
 .container{
     text-align: center;
     margin-top: 23px;
 }
 .calculator{
-    background: rgb(230 93 93);
+    background: rgb(228 230 93);
     border-radius: 10px;
     padding: 4px;
     display:inline-block;
@@ -34,7 +39,8 @@ button:hover{
 h1{
     margin: 10px;
     font-size: 45px;
-    color: blueviolet;
+    color: #2be252;
+    text-shadow: 1px 1px aliceblue;
 }
 #btn{
     font-size: 20px;
