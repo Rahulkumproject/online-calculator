@@ -1,9 +1,11 @@
 let screen=document.getElementById('screen');
-let buttons=document.querySelectorAll('button');
+
 let screenvalue='';
 let advance=document.getElementById('btn');
+var buttons=document.querySelectorAll('button');
 let add=document.getElementById('add');
 advance.addEventListener('click',(e)=>{
+    e.preventDefault();
     let html=`<tr>
     <td ><button >rem</button></td>
     <td><button>sin</button></td>
