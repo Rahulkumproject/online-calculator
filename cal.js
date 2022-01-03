@@ -1,6 +1,18 @@
 let screen=document.getElementById('screen');
 let buttons=document.querySelectorAll('button');
 let screenvalue='';
+let advance=document.getElementById('btn');
+let add=document.getElementById('add');
+advance.addEventListener('click',(e)=>{
+    let html=`<tr>
+    <td ><button >rem</button></td>
+    <td><button>sin</button></td>
+    <td><button>cos</button></td>
+    <td><button>tan</button></td>
+     </tr>`;
+   add.innerHTML=html;
+   buttontext='';
+})
 for(item of buttons){
     item.addEventListener('click', (e)=>{
         buttontext=e.target.innerText;
@@ -13,6 +25,9 @@ for(item of buttons){
         }else if(buttontext=='rem'){
             buttontext='%';
             screenvalue+=buttontext;
+            screen.value=screenvalue;
+        }else if(buttontext=='Advance'){
+            screenvalue="";
             screen.value=screenvalue;
         }
         else if(buttontext=='C'){
