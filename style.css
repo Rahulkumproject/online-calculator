@@ -43,8 +43,16 @@ h1{
     text-shadow: 1px 1px aliceblue;
 }
 #btn{
-    font-size: 20px;
-    width: 200px;
+    font-size: 13px;
+    width: 68px;
     height: 40px;
-    color:blue;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#equal{
+    background: #00ffd0fc;
+    font-size: 39px;
 }

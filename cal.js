@@ -1,19 +1,15 @@
-let screen=document.getElementById('screen');
-
-let screenvalue='';
-let advance=document.getElementById('btn');
-var buttons=document.querySelectorAll('button');
-let add=document.getElementById('add');
-advance.addEventListener('click',(e)=>{
-    e.preventDefault();
-    let html=`<tr>
-    <td ><button >rem</button></td>
-    <td><button>sin</button></td>
-    <td><button>cos</button></td>
-    <td><button>tan</button></td>
-     </tr>`;
-   add.innerHTML=html;
-   buttontext='';
+let screen = document.getElementById('screen');
+let buttons = document.querySelectorAll('button');
+let screenvalue = '';
+let advance = document.getElementById('btn');
+let adv = document.getElementById('adv');
+let adv1 = document.getElementById('adv1');
+adv.style.visibility = "hidden";
+adv1.style.visibility = "hidden";
+let add = document.getElementById('add');
+advance.addEventListener('click', (e) => {
+    adv.style.visibility="visible";
+    adv1.style.visibility="visible";
 })
 for(item of buttons){
     item.addEventListener('click', (e)=>{
