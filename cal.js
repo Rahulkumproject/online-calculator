@@ -25,7 +25,6 @@ for(item of buttons){
             screenvalue+=buttontext;
             screen.value=screenvalue;
         }else if(buttontext=='Advance'){
-            screenvalue="";
             screen.value=screenvalue;
         }
         else if(buttontext=='C'){
