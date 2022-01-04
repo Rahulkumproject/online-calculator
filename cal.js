@@ -20,10 +20,6 @@ for(item of buttons){
             buttontext='*';
             screenvalue+=buttontext;
             screen.value=screenvalue;
-        }else if(buttontext=='rem'){
-            buttontext='%';
-            screenvalue+=buttontext;
-            screen.value=screenvalue;
         }else if(buttontext=='Advance'){
             screen.value=screenvalue;
         }
@@ -39,7 +35,19 @@ for(item of buttons){
                 screenvalue=screenvalue.slice(1,size+1);
                 screenvalue=Math.sqrt(screenvalue);
                 screen.value=screenvalue;
-            }else if(screenvalue.includes('sin')){
+            }else if(screenvalue.includes('per') && screenvalue.includes('+')){
+                screenvalue=screenvalue.slice(0,size-2);
+               let num=screenvalue.split('+');
+                screenvalue=parseInt(num[0])+parseInt((num[0]*num[1])/100);
+                screen.value=screenvalue;
+            }
+            else if(screenvalue.includes('per') && screenvalue.includes('-')){
+                screenvalue=screenvalue.slice(0,size-2);
+               let num=screenvalue.split('-');
+                screenvalue=parseInt(num[0])-parseInt((num[0]*num[1])/100);
+                screen.value=screenvalue;
+            }
+            else if(screenvalue.includes('sin')){
                 screenvalue=screenvalue.slice(4,size);
                 screenvalue=screenvalue*((2*Math.PI)/360);
                 screenvalue=Math.sin(screenvalue);
