@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right,blue,green)
+    background: linear-gradient(to top,#00ffdc,#002180);
 }
 .container{
     text-align: center;
@@ -26,8 +26,8 @@ button{
     font-size: 28px;
     background: rgb(45 203 45);
     width: 100px;
-    height: 46px;
-    border-radius: 10px;
+    height: 55px;
+    border-radius: 40px;
 }
 button:hover{
     background:rgb(199, 196, 14);
