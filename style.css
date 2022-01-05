@@ -56,3 +56,9 @@ h1{
     background: #00ffd0fc;
     font-size: 39px;
 }
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}

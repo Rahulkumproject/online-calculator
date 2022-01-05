@@ -4,12 +4,16 @@ let screenvalue = '';
 let advance = document.getElementById('btn');
 let adv = document.getElementById('adv');
 let adv1 = document.getElementById('adv1');
-adv.style.visibility = "hidden";
-adv1.style.visibility = "hidden";
 let add = document.getElementById('add');
 advance.addEventListener('click', (e) => {
+    if(adv.style.visibility=="visible"){
+        adv.style.visibility="hidden";
+        adv1.style.visibility="hidden";
+    }else{
     adv.style.visibility="visible";
     adv1.style.visibility="visible";
+    }
+    
 })
 for(item of buttons){
     item.addEventListener('click', (e)=>{
